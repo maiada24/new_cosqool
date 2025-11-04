@@ -1,0 +1,14 @@
+@use 'variables';
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.text-primary, .nav-link.active {
+  color: variables.$primary !important;
+}
+.bg-primary {
+  background-color: variables.$primary !important;
+}
+.card.bg-primary {
+  background-image: linear-gradient(to right, variables.$primary, variables.$primary) !important;
+}

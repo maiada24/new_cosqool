@@ -1,0 +1,144 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 mt-5 sidebar">
+      <app-side-menu></app-side-menu>
+    </div>
+    <div class="col-md-10">
+      <app-header></app-header>
+      <div class="row equal-height mt-4">
+        <div class="col-md-4">
+          <div class="card shadow rounded-0 border-0">
+            <div class="card-body p-5">
+              <h5 class="card-title">Number Of Students</h5>
+              <div class="d-flex align-items-baseline">
+                <h1 class="display-1 students-num fw-bold text-primary mb-4">258</h1>
+                <span class="card-text ms-2 text-primary">Students</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-rocket-takeoff me-3 fs-5 text-primary"></i>
+                <div>
+                  <p class="card-text text-secondary fw-light m-0">This week</p>
+                  <strong class="text-primary">58</strong>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mt-2">
+                <i class="bi bi-rocket-takeoff me-3 fs-5 text-primary"></i>
+                <div>
+                  <p class="card-text text-secondary fw-light m-0">During the month of JAN</p>
+                  <strong class="text-primary">200</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card shadow rounded-0 border-0 bg-primary text-white">
+            <div class="card-body px-5 pt-5">
+              <h5 class="card-title">Your Profit</h5>
+              <h1 class="display-4 fw-bold">200.00 $</h1>
+              <p class="card-text fs-5 me-5">Lorem ipsum dolor sit amet consectetur. Nisi pulvinar vel pretium ullamcorper eget condimentum risus magna pretium. Anet odio nisl augue sit.</p>
+              <div class="card d-flex flex-row bg-white text-dark border-0 rounded-0 mt-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-baseline">
+                  <span class="text-primary mt-2 fs-5 fw-normal"><span class="text-secondary fs-5 fw-light me-3">Promocode</span> #AH1234</span>
+                  <span class="text-secondary fs-5 fw-light">Start from 02/2024 to 10/2024</span>
+                </div>
+                <hr>
+                <div class="card-body d-flex flex-column justify-content-between align-items-baseline">
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex me-3">
+                        <span class="fw-bold fs-1 display-3 text-primary">30</span>
+                        <span class="text-primary fs-4 fst-normal">%</span>
+                      </div>
+                      <span class="fw-normal fs-5 text-primary">Commission per student</span>
+                    </div>
+                    <i class="bi bi-info-circle fs-5 text-primary"></i>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex me-3">
+                        <span class="fw-bold fs-1 display-3 text-primary">15</span>
+                        <span class="text-primary fs-4 fst-normal">%</span>
+                      </div>
+                      <span class="fw-normal fs-5 text-primary">Student discount</span>
+                    </div>
+                    <i class="bi bi-info-circle fs-5 text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="bi bi-currency-dollar me-2"></i> Monthly Income</h5>
+              <p class="card-text">JAN 500$</p>
+              <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white">
+                  <h5 class="mb-0">Bar Chart Example</h5>
+                </div>
+                <div class="card-body p-4">
+                  <canvas id="barCanvas"></canvas>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-end" style="height: 200px;">
+                <div class="bg-primary" style="width: 2%; height: 100%;"></div> <!-- JAN -->
+                <div class="bg-light" style="width: 15%; height: 80%;"></div> <!-- FEB -->
+                <div class="bg-light" style="width: 15%; height: 10%;"></div> <!-- MAR -->
+                <div class="bg-light" style="width: 15%; height: 20%;"></div> <!-- APR -->
+                <div class="bg-light" style="width: 15%; height: 5%;"></div> <!-- MAY -->
+                <div class="bg-light" style="width: 15%; height: 30%;"></div> <!-- JUN -->
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>JAN</span>
+                <span>FEB</span>
+                <span>MAR</span>
+                <span>APR</span>
+                <span>MAY</span>
+                <span>JUN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Student Subscription</h5>
+              <div class="border-bottom pb-2 mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-people fs-3 text-muted me-3"></i>
+                  <div>
+                    <p class="mb-0">Month</p>
+                    <p class="mb-0">234 students</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-2 mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-people fs-3 text-muted me-3"></i>
+                  <div>
+                    <p class="mb-0">6-Months</p>
+                    <p class="mb-0">234 students</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-people fs-3 text-muted me-3"></i>
+                  <div>
+                    <p class="mb-0">Yearly</p>
+                    <p class="mb-0">234 students</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

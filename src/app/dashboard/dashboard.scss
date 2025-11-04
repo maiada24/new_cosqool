@@ -1,0 +1,21 @@
+.sidebar {
+  max-width: 12%;
+}
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equal-height > [class*="col-"] {
+  display: flex;
+}
+
+.equal-height .card {
+  width: 100%;           // important!
+}
+.students-num {
+  font-size: 7rem;
+}
+canvas {
+  max-height: 400px;
+}
