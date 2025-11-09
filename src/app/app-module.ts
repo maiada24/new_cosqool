@@ -8,6 +8,8 @@ import { Header } from './header/header';
 import { Dashboard } from './dashboard/dashboard';
 import { Profile } from './profile/profile';
 import { SideMenu } from './side-menu/side-menu';
+import { StudentSubscription } from './student-subscription/student-subscription';
+import { SubscriptionTable } from './subscription-table/subscription-table';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SideMenu } from './side-menu/side-menu';
     Header,
     Dashboard,
     Profile,
-    SideMenu
+    SideMenu,
+    StudentSubscription,
+    SubscriptionTable
   ],
   imports: [
     BrowserModule,

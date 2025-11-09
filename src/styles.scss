@@ -3,6 +3,10 @@
 html, body { height: 100%; }
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.text-danger {
+  color: variables.$danger !important;
+}
 .text-primary, .nav-link.active {
   color: variables.$primary !important;
 }

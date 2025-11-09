@@ -1,0 +1,56 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Number of students</th>
+        <th>Month</th>
+        <th>Beginning of subscription</th>
+        <th>End of subscription</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of data">
+        <td [class.text-danger]="row.students == 0">{{ row.students }} {{ row.students === 1 ? 'Student' : 'Students' }}</td>
+        <td [class.text-danger]="row.students == 0">{{ row.month }}</td>
+        <td [class.text-danger]="row.students == 0">{{ row.startDate }}</td>
+        <td [class.text-danger]="row.students == 0">{{ row.endDate }}</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="total-section">
+    <span>Total students:</span>
+    <span class="total-number ms-2">{{ getTotal() }}</span>
+    <span class="ms-1">students</span>
+</div>
+
+<!--<div class="card shadow-sm border-0">-->
+<!--    <div class="card-body p-0">-->
+<!--        <div class="table-responsive">-->
+<!--            <table class="table table-hover mb-0">-->
+<!--                <thead class="bg-light">-->
+<!--                <tr>-->
+<!--                    <th class="ps-4">Number of students</th>-->
+<!--                    <th>Month</th>-->
+<!--                    <th>Beginning of subscription</th>-->
+<!--                    <th class="pe-4">End of subscription</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr *ngFor="let row of data">-->
+<!--                    <td class="ps-4 fw-bold" [class.text-danger]="row.isZero">-->
+<!--                        {{ row.students }} Students-->
+<!--                    </td>-->
+<!--                    <td [class.text-danger]="row.isZero">{{ row.month }}</td>-->
+<!--                    <td [class.text-danger]="row.isZero">{{ row.start }}</td>-->
+<!--                    <td class="pe-4" [class.text-danger]="row.isZero">{{ row.end }}</td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="card-footer bg-white border-top text-end py-3">-->
+<!--        <h5 class="mb-0">-->
+<!--            Total students: <span class="text-success fw-bold">130</span> students-->
+<!--        </h5>-->
+<!--    </div>-->
+<!--</div>-->

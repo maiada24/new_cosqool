@@ -1,12 +1,4 @@
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2 mt-5 sidebar">
-      <app-side-menu></app-side-menu>
-    </div>
-    <div class="col-md-10">
-      <app-header></app-header>
-      <div class="row equal-height mt-4">
+<div class="row equal-height mt-4">
         <div class="col-md-4">
           <div class="card shadow rounded-0 border-0">
             <div class="card-body p-5">
@@ -71,67 +63,52 @@
           </div>
         </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="card">
+
+<div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card border-0 rounded-0 monthly-income p-4">
             <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-currency-dollar me-2"></i> Monthly Income</h5>
-              <p class="card-text">JAN 500$</p>
-              <div class="card shadow-lg border-0">
-                <div class="card-header bg-primary text-white">
-                  <h5 class="mb-0">Bar Chart Example</h5>
-                </div>
+              <h5 class="card-title"><i class="bi bi-currency-dollar me-2"></i> Monthly Income</h5>
+              <p class="card-text text-primary">JAN 500$</p>
+              <div class="card border-0 rounded-0">
                 <div class="card-body p-4">
-                  <canvas id="barCanvas"></canvas>
+                  <canvas #chartCanvas></canvas>
                 </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-end" style="height: 200px;">
-                <div class="bg-primary" style="width: 2%; height: 100%;"></div> <!-- JAN -->
-                <div class="bg-light" style="width: 15%; height: 80%;"></div> <!-- FEB -->
-                <div class="bg-light" style="width: 15%; height: 10%;"></div> <!-- MAR -->
-                <div class="bg-light" style="width: 15%; height: 20%;"></div> <!-- APR -->
-                <div class="bg-light" style="width: 15%; height: 5%;"></div> <!-- MAY -->
-                <div class="bg-light" style="width: 15%; height: 30%;"></div> <!-- JUN -->
-              </div>
-              <div class="d-flex justify-content-between mt-2">
-                <span>JAN</span>
-                <span>FEB</span>
-                <span>MAR</span>
-                <span>APR</span>
-                <span>MAY</span>
-                <span>JUN</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
+        <div class="col-md-8">
+          <div class="card rounded-0 border-0">
             <div class="card-body">
               <h5 class="card-title">Student Subscription</h5>
               <div class="border-bottom pb-2 mb-2">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center py-3">
                   <i class="bi bi-people fs-3 text-muted me-3"></i>
                   <div>
-                    <p class="mb-0">Month</p>
-                    <p class="mb-0">234 students</p>
+                    <p class="mb-0 text-secondary">Month</p>
+                    <a class="text-decoration-none mb-0 text-primary fw-light" href="javascript:void(0)"
+                       (click)="goToSubscription('month')"><span class="fw-normal">234</span> students</a>
                   </div>
                 </div>
               </div>
               <div class="border-bottom pb-2 mb-2">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center py-3">
                   <i class="bi bi-people fs-3 text-muted me-3"></i>
                   <div>
-                    <p class="mb-0">6-Months</p>
-                    <p class="mb-0">234 students</p>
+                    <p class="mb-0 text-secondary">6-Months</p>
+                    <a class="text-decoration-none mb-0 text-primary fw-light" href="javascript:void(0)"
+                       (click)="goToSubscription('sixMonth')"><span class="fw-normal">234</span> students</a>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center py-3">
                   <i class="bi bi-people fs-3 text-muted me-3"></i>
                   <div>
-                    <p class="mb-0">Yearly</p>
-                    <p class="mb-0">234 students</p>
+                    <p class="mb-0 text-secondary">Yearly</p>
+                    <a class="text-decoration-none mb-0 text-primary fw-light" href="javascript:void(0)"
+                       (click)="goToSubscription('yearly')"><span class="fw-normal">234</span> students</a>
                   </div>
                 </div>
               </div>
@@ -139,6 +116,3 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>

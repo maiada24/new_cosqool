@@ -1,7 +1,12 @@
-<!--<app-header></app-header>-->
+<app-header></app-header>
+<div class="container-fluid h-100">
+<div class="row h-100">
+    <div class="col-md-1 mt-5 sidebar">
+        <app-side-menu></app-side-menu>
+    </div>
+    <div class="col-md-10 ps-5 border-start border-top">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+</div>
 
-<div class="min-vh-100">
-<!--  <app-side-menu></app-side-menu>-->
-
-      <router-outlet></router-outlet>
-  </div>

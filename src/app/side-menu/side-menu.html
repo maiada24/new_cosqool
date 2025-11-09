@@ -1,17 +1,17 @@
 <ul class="nav flex-column mt-3">
   <li class="nav-item">
-    <a class="nav-link active" href="#">
-      <i class="bi bi-star me-2"></i> Overview
+    <a class="nav-link active" routerLink="/dashboard" routerLinkActive="active" #dashboard="routerLinkActive">
+      <i class="bi bi-star-fill me-2" [class.active-icon]="dashboard.isActive"></i> Overview
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">
-      <i class="bi bi-person me-2"></i> Profile
+    <a class="nav-link" routerLink="/profile" routerLinkActive="active" #profile="routerLinkActive">
+      <i class="bi bi-person me-2" [class.active-icon]="profile.isActive"></i> Profile
     </a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">
-      <i class="bi bi-box-arrow-right me-2"></i> Withdraw
-    </a>
-  </li>
+<!--  <li class="nav-item">-->
+<!--    <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">-->
+<!--      <i class="bi bi-box-arrow-right me-2"></i> Withdraw-->
+<!--    </a>-->
+<!--  </li>-->
 </ul>
